@@ -5,7 +5,8 @@ import os
 import subprocess
 
 SCRIPTS_TO_RUN = [
-    "p22_Catalogo_de_los_jsx_de_doc________.py",
+    "p22_docs2catalogo_json.py",
+    "p23_catalogo_json2componentsMap_jsx.py",
 ]
 # Ejecutar scripts
 
