@@ -2,10 +2,11 @@
 
 import json
 import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # Ruta del catálogo y salida
-catalogo_path = 'src/components/Catalogo.json'
-output_path = 'src/components/componentsMap.js'
+catalogo_path = '../src/components/docs/Catalogo.json'
+output_path = '../src/components/componentsMap.jsx'
 
 # Cargar el catálogo
 with open(catalogo_path, 'r', encoding='utf-8') as f:
