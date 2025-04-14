@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 import Ayuda from './components/Ayuda';
 import Docs from './components/NavigationBarDocs';
 import NavigationBar from './components/NavigationBar';
-import Catalogo from './components/Catalogo.json';
+import Catalogo from './components/docs/Catalogo.json';
 
 import Footer from './components/Footer';
 import Terms from './components/footer/Términos de Uso';

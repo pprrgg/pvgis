@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import { TextField, AppBar, Box, Toolbar, List, ListItem, ListItemText, Typography, Divider, InputAdornment, MenuItem, Select, FormControl, InputLabel, Grid } from '@mui/material';
-import Catalogo from './Catalogo.json'; // Importar catálogo
+import Catalogo from './docs/Catalogo.json';
 import ScrollToTop from './ScrollToTop';
 import { useNavigate } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search'; // Importar el icono de la lupa
