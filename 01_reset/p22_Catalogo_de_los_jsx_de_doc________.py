@@ -7,7 +7,7 @@ import re
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # Ruta del directorio base donde buscar los archivos JSX
-base_dir = "../src/docs"
+base_dir = "../src/components/docs"
 # Ruta del archivo de salida
 output_file = '../src/components/docs/Catalogo.json'
 

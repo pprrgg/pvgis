@@ -21,7 +21,7 @@ for item in catalogo:
     sector = item['sector']
     
     # Construcción del path relativo
-    import_path = f'../docs/{grupo}/{sector}/{cod}.jsx'
+    import_path = f'./docs/{grupo}/{sector}/{cod}.jsx'
     
     # Línea de importación
     import_line = f"import {cod} from '{import_path}';"

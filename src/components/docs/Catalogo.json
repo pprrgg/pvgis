@@ -1,1 +1,146 @@
-[]
+[
+    {
+        "categoria": "libre",
+        "codigo": "CER1001 TÉRMINO DE FACTURACIÓN DE ENERGÍA ACTIVA DEL PVPC20TD",
+        "sector": "Mercado_regulado",
+        "grupo": "CONTRATOS_DE_ENERGÍA",
+        "cod": "Cer1001TérminoDeFacturaciónDeEnergíaActivaDelPvpc20td",
+        "co": "CER1001"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "CER1739 PRECIO DE LA ENERGÍA EXCEDENTARIA DEL AUTOCONSUMO",
+        "sector": "Mercado_regulado",
+        "grupo": "CONTRATOS_DE_ENERGÍA",
+        "cod": "Cer1739PrecioDeLaEnergíaExcedentariaDelAutoconsumo",
+        "co": "CER1739"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "ACAF000 ANÁLISIS FINANCIERO",
+        "sector": "Comun",
+        "grupo": "ENERGÍA_FOTOVOLTAICA",
+        "cod": "Acaf000AnálisisFinanciero",
+        "co": "ACAF000"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "ACPVPC00 PRECIOS PVPC",
+        "sector": "Comun",
+        "grupo": "ENERGÍA_FOTOVOLTAICA",
+        "cod": "Acpvpc00PreciosPvpc",
+        "co": "ACPVPC00"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AFC020 AUTOCONSUMO COLECTIVO CON EXCEDENTES Y CON COMPENSACIÓN CONECTADA EN RED INTERIOR",
+        "sector": "Individual",
+        "grupo": "ENERGÍA_FOTOVOLTAICA",
+        "cod": "Afc020AutoconsumoColectivoConExcedentesYConCompensaciónConectadaEnRedInterior",
+        "co": "AFC020"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AIF030 ANÁLISIS DE OFERTA DE AUTOCONSUMO",
+        "sector": "Individual",
+        "grupo": "ENERGÍA_FOTOVOLTAICA",
+        "cod": "Aif030AnálisisDeOfertaDeAutoconsumo",
+        "co": "AIF030"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AIF040 GENERACION FOTOVOLTAICA",
+        "sector": "Individual",
+        "grupo": "ENERGÍA_FOTOVOLTAICA",
+        "cod": "Aif040GeneracionFotovoltaica",
+        "co": "AIF040"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "BT040401 INSTALACIÓN ELÉCTRICA DE VIVIENDA UNIFAMILIAR CON GRADO DE ELECTRIFICACIÓN BÁSICO",
+        "sector": "RBT0_Memoria_Técnica_De_Diseño",
+        "grupo": "INSTALACIONES_ELÉCTRICAS_BT",
+        "cod": "Bt040401InstalaciónEléctricaDeViviendaUnifamiliarConGradoDeElectrificaciónBásico",
+        "co": "BT040401"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "BT040402 INSTALACIÓN ELÉCTRICA DE VIVIENDA UNIFAMILIAR CON GRADO DE ELECTRIFICACIÓN ELEVADO",
+        "sector": "RBT0_Memoria_Técnica_De_Diseño",
+        "grupo": "INSTALACIONES_ELÉCTRICAS_BT",
+        "cod": "Bt040402InstalaciónEléctricaDeViviendaUnifamiliarConGradoDeElectrificaciónElevado",
+        "co": "BT040402"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "BT100 PREVISIÓN DE CARGAS PARA SUMINISTROS EN BAJA TENSIÓN",
+        "sector": "RBT1_Instalaciones_De_Enlace",
+        "grupo": "INSTALACIONES_ELÉCTRICAS_BT",
+        "cod": "Bt100PrevisiónDeCargasParaSuministrosEnBajaTensión",
+        "co": "BT100"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "BT220 PROTECCIÓN CONTRA SOBREINTENSIDADES",
+        "sector": "RBT6_Protecciones",
+        "grupo": "INSTALACIONES_ELÉCTRICAS_BT",
+        "cod": "Bt220ProtecciónContraSobreintensidades",
+        "co": "BT220"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "BT240 PROTECCIÓN CONTRA CONTACTOS INDIRECTOS",
+        "sector": "RBT6_Protecciones",
+        "grupo": "INSTALACIONES_ELÉCTRICAS_BT",
+        "cod": "Bt240ProtecciónContraContactosIndirectos",
+        "co": "BT240"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "BT400 INSTALACIONES GENERADORAS DE BAJA TENSIÓN",
+        "sector": "RBT7_Instalaciones_Especiales",
+        "grupo": "INSTALACIONES_ELÉCTRICAS_BT",
+        "cod": "Bt400InstalacionesGeneradorasDeBajaTensión",
+        "co": "BT400"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "BT520 INFRAESTRUCTURA PARA LA RECARGA DE VEHÍCULOS ELÉCTRICOS",
+        "sector": "RBT7_Instalaciones_Especiales",
+        "grupo": "INSTALACIONES_ELÉCTRICAS_BT",
+        "cod": "Bt520InfraestructuraParaLaRecargaDeVehículosEléctricos",
+        "co": "BT520"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "BTX030 BATERÍA DE CONDENSADORES",
+        "sector": "RBT9_Otras_Instalaciones",
+        "grupo": "INSTALACIONES_ELÉCTRICAS_BT",
+        "cod": "Btx030BateríaDeCondensadores",
+        "co": "BTX030"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "BTX040 FILTRO DE ARMÓNICOS",
+        "sector": "RBT9_Otras_Instalaciones",
+        "grupo": "INSTALACIONES_ELÉCTRICAS_BT",
+        "cod": "Btx040FiltroDeArmónicos",
+        "co": "BTX040"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "BTX047 INSTALACIÓN DE COMUNICACIÓN DE SAI LEGRAND",
+        "sector": "RBT9_Otras_Instalaciones",
+        "grupo": "INSTALACIONES_ELÉCTRICAS_BT",
+        "cod": "Btx047InstalaciónDeComunicaciónDeSaiLegrand",
+        "co": "BTX047"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "BTX060 SISTEMA DE ALIMENTACIÓN ININTERRUMPIDA SAI",
+        "sector": "RBT9_Otras_Instalaciones",
+        "grupo": "INSTALACIONES_ELÉCTRICAS_BT",
+        "cod": "Btx060SistemaDeAlimentaciónIninterrumpidaSai",
+        "co": "BTX060"
+    }
+]

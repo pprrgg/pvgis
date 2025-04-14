@@ -1,15 +1,15 @@
 
 import React, { useState, useEffect, useCallback } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "../../../components/firebase/firebaseConfig";
+import { auth } from "../../../firebase/firebaseConfig";
 import axios from "axios";
 import * as pdfjsLib from "pdfjs-dist";
 import * as XLSX from "xlsx";
-import AppBarComponent from "../../../components/NavigationBarDocumento";
-import XLSXUploaderStoragePrecargaxDefectoHojaModal from "../../../components/XLSXUploaderStoragePrecargaxDefectoHojaModal";
-import MapaModal from "../../../components/MapaModal";
+import AppBarComponent from "../../../NavigationBarDocumento";
+import XLSXUploaderStoragePrecargaxDefectoHojaModal from "../../../XLSXUploaderStoragePrecargaxDefectoHojaModal";
+import MapaModal from "../../../MapaModal";
 import { Box, Backdrop, CircularProgress, Typography } from "@mui/material";
-import config from "../../../components/configURL";
+import config from "../../../configURL";
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `/workers/3.11.174/pdf.worker.min.js`;
 
