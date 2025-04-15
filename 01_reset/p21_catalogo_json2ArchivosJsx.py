@@ -1,4 +1,15 @@
+#!/usr/bin/env python3
 
+import os
+import json
+import shutil
+
+
+
+# def obtener_contenido_jsx(carpeta, subcarpeta, nombre_archivo):
+def obtener_contenido_jsx(NORMALIZED_GRUPO, NORMALIZED_SECTOR, nombre_archivo,NORMALIZED_API):
+
+    return """
 import React, { useState, useEffect, useCallback } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../../firebase/firebaseConfig";
@@ -13,10 +24,10 @@ import config from "../../../configURL";
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `/workers/3.11.174/pdf.worker.min.js`;
 
-
-const ENDPOINT = "ENERGÍA_FOTOVOLTAICA/Individual/Aif030AnálisisDeOfertaDeAutoconsumo/Aif030"
-const HOJAEXCEL = "excel/ENERGÍA_FOTOVOLTAICA/Individual/Aif030.xlsx"
-
+"""+f"""
+const ENDPOINT = "{NORMALIZED_GRUPO}/{NORMALIZED_SECTOR}/{nombre_archivo}/{NORMALIZED_API}"
+const HOJAEXCEL = "excel/{NORMALIZED_GRUPO}/{NORMALIZED_SECTOR}/{nombre_archivo}.xlsx"
+"""+"""
 const PDF_API_URL = `${config.API_URL}/${ENDPOINT}?timestamp=${new Date().getTime()}`;
 
 const PDFRenderer = () => {
@@ -68,13 +79,13 @@ const PDFRenderer = () => {
             const storedData = sessionStorage.getItem("excelData");
             if (storedData) {
                 const excelData = JSON.parse(storedData);
-
+"""+f"""
                 console.log('no recarga el excel si hay una hoja con el nombre')
-                console.log(`Aif030`)
+                console.log(`{NORMALIZED_API}`)
                 console.log(excelData)
                 console.log('+++++==========================================================')
-                if (excelData.Aif030)
-
+                if (excelData.{NORMALIZED_API})
+"""+"""
                 {                    setTempSheets(excelData);
                     return;
                 }
@@ -167,3 +178,67 @@ const PDFRenderer = () => {
 export default PDFRenderer;
 
 
+"""
+
+
+
+
+
+def catalogojson2jsx():
+    # Ruta al archivo JSON
+    ruta_json = "../src/components/docs/Catalogo.json"
+
+    # Leer los datos desde el JSON
+    with open(ruta_json, "r", encoding="utf-8") as archivo:
+        datos = json.load(archivo)
+
+    # Ruta base donde se van a guardar los archivos JSX
+    base_destino = "../src/components/docs"
+
+    # Recolectar todas las rutas únicas a borrar
+    rutas_para_borrar = set()
+    for item in datos:
+        grupo = item["grupo"]
+        sector = item["sector"]
+        ruta_relativa = os.path.join(grupo, sector)
+        ruta_completa = os.path.join(base_destino, ruta_relativa)
+        rutas_para_borrar.add(ruta_completa)
+
+    # Borrar directorios existentes
+    for ruta in rutas_para_borrar:
+        if os.path.exists(ruta):
+            shutil.rmtree(ruta)
+
+    # Crear los archivos JSX
+    for item in datos:
+        grupo = item["grupo"]
+        sector = item["sector"]
+        cod = item["cod"]
+
+        # Construir ruta
+        ruta_directorio = os.path.join(base_destino, grupo, sector)
+        ruta_archivo = os.path.join(ruta_directorio, f"{cod}.jsx")
+
+        # Crear directorios (limpios)
+        os.makedirs(ruta_directorio, exist_ok=True)
+
+        ################################
+
+
+        # Obtener el contenido a escribir en el archivo .jsx
+        contenido = obtener_contenido_jsx(item["grupo"], item["sector"], item["cod"], item["co"].capitalize())
+        ################################
+
+
+        # Escribir archivo con contenido 'hola'
+        with open(ruta_archivo, "w", encoding="utf-8") as f:
+            f.write(contenido)
+
+    print("Archivos creados correctamente.")
+
+
+
+if __name__ == '__main__':
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+    catalogojson2jsx()

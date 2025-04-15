@@ -1,0 +1,712 @@
+{
+    "AAA/AAA/Codigo456NombreSeparadoPorMayusculasSinEspacios.py": {
+        "Codigo456": [
+            [
+                "Parametro",
+                "Valor"
+            ],
+            [
+                "Inversión inicial [€]",
+                0
+            ],
+            [
+                "Bonificación  inicial [€]",
+                10000
+            ],
+            [
+                "Duración de la actuación [años]",
+                15
+            ],
+            [
+                "Préstamo recibido [€]",
+                100000
+            ],
+            [
+                "Tasa de interés del préstamo [\\%]",
+                5
+            ],
+            [
+                "Plazo del préstamo [años]",
+                15
+            ],
+            [
+                "Inflación annual [\\%]",
+                3
+            ],
+            [
+                "Ahorro annual [€]",
+                25000
+            ],
+            [
+                "Costos fijos operativos [€]",
+                1000
+            ],
+            [
+                "Tasa de descuento [\\%]",
+                6
+            ]
+        ],
+        "Coordenadas": [
+            [
+                "Parámetro",
+                "Valor"
+            ],
+            [
+                "lat",
+                36.6641681434112
+            ],
+            [
+                "lng",
+                -4.45863940137516
+            ]
+        ],
+        "Participantes": [
+            [
+                "Parámetro",
+                "P1"
+            ],
+            [
+                "Rol",
+                ""
+            ],
+            [
+                "DNI/NIF/NIE",
+                ""
+            ],
+            [
+                "Nombre/Razón Social",
+                "'EDITAR' para poner tu nombre y ajustar los parámetros."
+            ],
+            [
+                "Titulación",
+                ""
+            ]
+        ]
+    },
+    "AAA/AAA/Codigo123NombreSeparadoPorMayusculasSinEspacios.py": {
+        "Codigo123": [
+            [
+                "Parametro",
+                "Valor"
+            ],
+            [
+                "Inversión inicial [€]",
+                0
+            ],
+            [
+                "Bonificación  inicial [€]",
+                10000
+            ],
+            [
+                "Duración de la actuación [años]",
+                15
+            ],
+            [
+                "Préstamo recibido [€]",
+                100000
+            ],
+            [
+                "Tasa de interés del préstamo [\\%]",
+                5
+            ],
+            [
+                "Plazo del préstamo [años]",
+                15
+            ],
+            [
+                "Inflación annual [\\%]",
+                3
+            ],
+            [
+                "Ahorro annual [€]",
+                25000
+            ],
+            [
+                "Costos fijos operativos [€]",
+                1000
+            ],
+            [
+                "Tasa de descuento [\\%]",
+                6
+            ]
+        ],
+        "Coordenadas": [
+            [
+                "Parámetro",
+                "Valor"
+            ],
+            [
+                "lat",
+                36.6641681434112
+            ],
+            [
+                "lng",
+                -4.45863940137516
+            ]
+        ],
+        "Participantes": [
+            [
+                "Parámetro",
+                "P1"
+            ],
+            [
+                "Rol",
+                ""
+            ],
+            [
+                "DNI/NIF/NIE",
+                ""
+            ],
+            [
+                "Nombre/Razón Social",
+                "'EDITAR' para poner tu nombre y ajustar los parámetros."
+            ],
+            [
+                "Titulación",
+                ""
+            ]
+        ]
+    },
+    "CONTRATOS_DE_ENERGÍA/Mercado_regulado/Cer1739PrecioDeLaEnergíaExcedentariaDelAutoconsumo.py": {
+        "Cer1739": [
+            [
+                "Parametro",
+                "Valor"
+            ],
+            [
+                "Inversión inicial [€]",
+                0
+            ],
+            [
+                "Bonificación  inicial [€]",
+                10000
+            ],
+            [
+                "Duración de la actuación [años]",
+                15
+            ],
+            [
+                "Préstamo recibido [€]",
+                100000
+            ],
+            [
+                "Tasa de interés del préstamo [\\%]",
+                5
+            ],
+            [
+                "Plazo del préstamo [años]",
+                15
+            ],
+            [
+                "Inflación annual [\\%]",
+                3
+            ],
+            [
+                "Ahorro annual [€]",
+                25000
+            ],
+            [
+                "Costos fijos operativos [€]",
+                1000
+            ],
+            [
+                "Tasa de descuento [\\%]",
+                6
+            ]
+        ],
+        "Coordenadas": [
+            [
+                "Parámetro",
+                "Valor"
+            ],
+            [
+                "lat",
+                36.6641681434112
+            ],
+            [
+                "lng",
+                -4.45863940137516
+            ]
+        ],
+        "Participantes": [
+            [
+                "Parámetro",
+                "P1"
+            ],
+            [
+                "Rol",
+                ""
+            ],
+            [
+                "DNI/NIF/NIE",
+                ""
+            ],
+            [
+                "Nombre/Razón Social",
+                "'EDITAR' para poner tu nombre y ajustar los parámetros."
+            ],
+            [
+                "Titulación",
+                ""
+            ]
+        ]
+    },
+    "CONTRATOS_DE_ENERGÍA/Mercado_regulado/Cer1001TérminoDeFacturaciónDeEnergíaActivaDelPvpc20td.py": {
+        "Cer1001": [
+            [
+                "Parametro",
+                "Valor"
+            ],
+            [
+                "Inversión inicial [€]",
+                0
+            ],
+            [
+                "Bonificación  inicial [€]",
+                10000
+            ],
+            [
+                "Duración de la actuación [años]",
+                15
+            ],
+            [
+                "Préstamo recibido [€]",
+                100000
+            ],
+            [
+                "Tasa de interés del préstamo [\\%]",
+                5
+            ],
+            [
+                "Plazo del préstamo [años]",
+                15
+            ],
+            [
+                "Inflación annual [\\%]",
+                3
+            ],
+            [
+                "Ahorro annual [€]",
+                25000
+            ],
+            [
+                "Costos fijos operativos [€]",
+                1000
+            ],
+            [
+                "Tasa de descuento [\\%]",
+                6
+            ]
+        ],
+        "Coordenadas": [
+            [
+                "Parámetro",
+                "Valor"
+            ],
+            [
+                "lat",
+                36.6641681434112
+            ],
+            [
+                "lng",
+                -4.45863940137516
+            ]
+        ],
+        "Participantes": [
+            [
+                "Parámetro",
+                "P1"
+            ],
+            [
+                "Rol",
+                ""
+            ],
+            [
+                "DNI/NIF/NIE",
+                ""
+            ],
+            [
+                "Nombre/Razón Social",
+                "'EDITAR' para poner tu nombre y ajustar los parámetros."
+            ],
+            [
+                "Titulación",
+                ""
+            ]
+        ]
+    },
+    "CONTRATOS_DE_ENERGÍA/Mercado_libre/Aif030AnálisisDeOfertaDeAutoconsumo.py": {
+        "Codigo": [
+            [
+                "Parametro",
+                "Valor"
+            ],
+            [
+                "Inversión inicial [€]",
+                0
+            ],
+            [
+                "Bonificación  inicial [€]",
+                10000
+            ],
+            [
+                "Duración de la actuación [años]",
+                15
+            ],
+            [
+                "Préstamo recibido [€]",
+                100000
+            ],
+            [
+                "Tasa de interés del préstamo [\\%]",
+                5
+            ],
+            [
+                "Plazo del préstamo [años]",
+                15
+            ],
+            [
+                "Inflación annual [\\%]",
+                3
+            ],
+            [
+                "Ahorro annual [€]",
+                25000
+            ],
+            [
+                "Costos fijos operativos [€]",
+                1000
+            ],
+            [
+                "Tasa de descuento [\\%]",
+                6
+            ]
+        ],
+        "Coordenadas": [
+            [
+                "Parámetro",
+                "Valor"
+            ],
+            [
+                "lat",
+                37.3883251804357
+            ],
+            [
+                "lng",
+                -4.508585281106158
+            ]
+        ],
+        "Participantes": [
+            [
+                "Parámetro",
+                "P1"
+            ],
+            [
+                "Rol",
+                ""
+            ],
+            [
+                "DNI/NIF/NIE",
+                ""
+            ],
+            [
+                "Nombre/Razón Social",
+                "'EDITAR' para poner tu nombre y ajustar los parámetros."
+            ],
+            [
+                "Titulación",
+                ""
+            ]
+        ],
+        "consumo": [
+            [
+                "Unnamed: 0",
+                "c1"
+            ],
+            [
+                "Año",
+                2017
+            ],
+            [
+                "Mes",
+                1
+            ],
+            [
+                "Día",
+                1
+            ],
+            [
+                "",
+                42
+            ],
+            [
+                "",
+                39
+            ],
+            [
+                "",
+                42
+            ],
+            [
+                "",
+                42
+            ],
+            [
+                "",
+                39
+            ],
+            [
+                "",
+                44
+            ],
+            [
+                "",
+                44
+            ],
+            [
+                "",
+                39
+            ],
+            [
+                "",
+                29
+            ],
+            [
+                "",
+                19
+            ],
+            [
+                "",
+                17
+            ],
+            [
+                "",
+                17
+            ],
+            [
+                "",
+                17
+            ],
+            [
+                "",
+                17
+            ],
+            [
+                "",
+                17
+            ],
+            [
+                "",
+                17
+            ],
+            [
+                "",
+                17
+            ],
+            [
+                "",
+                17
+            ],
+            [
+                "",
+                34
+            ],
+            [
+                "",
+                42
+            ],
+            [
+                "",
+                42
+            ],
+            [
+                "",
+                42
+            ],
+            [
+                "",
+                39
+            ],
+            [
+                "",
+                39
+            ],
+            [
+                "",
+                47
+            ],
+            [
+                "",
+                47
+            ],
+            [
+                "",
+                49
+            ],
+            [
+                "",
+                49
+            ],
+            [
+                "",
+                49
+            ],
+            [
+                "",
+                52
+            ],
+            [
+                "",
+                52
+            ],
+            [
+                "",
+                44
+            ],
+            [
+                "",
+                34
+            ],
+            [
+                "",
+                24
+            ],
+            [
+                "",
+                22
+            ],
+            [
+                "",
+                27
+            ],
+            [
+                "",
+                24
+            ],
+            [
+                "",
+                27
+            ],
+            [
+                "",
+                24
+            ],
+            [
+                "",
+                19
+            ],
+            [
+                "",
+                19
+            ],
+            [
+                "",
+                22
+            ],
+            [
+                "",
+                37
+            ],
+            [
+                "",
+                42
+            ],
+            [
+                "",
+                42
+            ],
+            [
+                "",
+                39
+            ],
+            [
+                "",
+                44
+            ],
+            [
+                "",
+                42
+            ],
+            [
+                "",
+                49
+            ],
+            [
+                "",
+                52
+            ],
+            [
+                "",
+                47
+            ],
+            [
+                "",
+                44
+            ],
+            [
+                "",
+                47
+            ],
+            [
+                "",
+                44
+            ],
+            [
+                "",
+                42
+            ],
+            [
+                "",
+                44
+            ],
+            [
+                "",
+                34
+            ],
+            [
+                "",
+                22
+            ],
+            [
+                "",
+                17
+            ],
+            [
+                "",
+                19
+            ],
+            [
+                "",
+                19
+            ],
+            [
+                "",
+                17
+            ],
+            [
+                "",
+                19
+            ],
+            [
+                "",
+                22
+            ],
+            [
+                "",
+                22
+            ],
+            [
+                "",
+                19
+            ],
+            [
+                "",
+                34
+            ],
+            [
+                "",
+                39
+            ]
+        ]
+    }
+}

@@ -61,7 +61,7 @@ const HomePage = () => {
       link: "/Docs",
     },
     {
-      id: 3,
+      id: 5,
       title: 'Autoconsumo',
       description: 'Descripción de la card 3',
       image: '/img/eie010.png',
@@ -71,7 +71,7 @@ const HomePage = () => {
       link: "/Docs",
     },
     {
-      id: 4,
+      id: 6,
       title: 'Card 4',
       description: 'Descripción de la card 4',
       image: '/img/eie010.png',

@@ -14,8 +14,8 @@ import config from "../../../configURL";
 pdfjsLib.GlobalWorkerOptions.workerSrc = `/workers/3.11.174/pdf.worker.min.js`;
 
 
-const ENDPOINT = "INSTALACIONES_ELÉCTRICAS_BT/RBT6_Protecciones/Bt240ProtecciónContraContactosIndirectos/Bt240"
-const HOJAEXCEL = "excel/INSTALACIONES_ELÉCTRICAS_BT/RBT6_Protecciones/Bt240.xlsx"
+const ENDPOINT = "AAA/AAA/Codigo123NombreSeparadoPorMayusculasSinEspacios/Codigo123"
+const HOJAEXCEL = "excel/AAA/AAA/Codigo123NombreSeparadoPorMayusculasSinEspacios.xlsx"
 
 const PDF_API_URL = `${config.API_URL}/${ENDPOINT}?timestamp=${new Date().getTime()}`;
 
@@ -70,10 +70,10 @@ const PDFRenderer = () => {
                 const excelData = JSON.parse(storedData);
 
                 console.log('no recarga el excel si hay una hoja con el nombre')
-                console.log(`Bt240`)
+                console.log(`Codigo123`)
                 console.log(excelData)
                 console.log('+++++==========================================================')
-                if (excelData.Bt240)
+                if (excelData.Codigo123)
 
                 {                    setTempSheets(excelData);
                     return;

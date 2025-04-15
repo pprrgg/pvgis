@@ -15,7 +15,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = `/workers/3.11.174/pdf.worker.min.js`;
 
 
 const ENDPOINT = "CONTRATOS_DE_ENERGÍA/Mercado_regulado/Cer1001TérminoDeFacturaciónDeEnergíaActivaDelPvpc20td/Cer1001"
-const HOJAEXCEL = "excel/CONTRATOS_DE_ENERGÍA/Mercado_regulado/Cer1001.xlsx"
+const HOJAEXCEL = "excel/CONTRATOS_DE_ENERGÍA/Mercado_regulado/Cer1001TérminoDeFacturaciónDeEnergíaActivaDelPvpc20td.xlsx"
 
 const PDF_API_URL = `${config.API_URL}/${ENDPOINT}?timestamp=${new Date().getTime()}`;
 

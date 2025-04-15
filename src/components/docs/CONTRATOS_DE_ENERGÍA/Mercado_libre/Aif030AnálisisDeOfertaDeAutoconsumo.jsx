@@ -14,8 +14,8 @@ import config from "../../../configURL";
 pdfjsLib.GlobalWorkerOptions.workerSrc = `/workers/3.11.174/pdf.worker.min.js`;
 
 
-const ENDPOINT = "INSTALACIONES_ELÉCTRICAS_BT/RBT7_Instalaciones_Especiales/Bt520InfraestructuraParaLaRecargaDeVehículosEléctricos/Bt520"
-const HOJAEXCEL = "excel/INSTALACIONES_ELÉCTRICAS_BT/RBT7_Instalaciones_Especiales/Bt520.xlsx"
+const ENDPOINT = "CONTRATOS_DE_ENERGÍA/Mercado_libre/Aif030AnálisisDeOfertaDeAutoconsumo/Aif030"
+const HOJAEXCEL = "excel/CONTRATOS_DE_ENERGÍA/Mercado_libre/Aif030AnálisisDeOfertaDeAutoconsumo.xlsx"
 
 const PDF_API_URL = `${config.API_URL}/${ENDPOINT}?timestamp=${new Date().getTime()}`;
 
@@ -70,10 +70,10 @@ const PDFRenderer = () => {
                 const excelData = JSON.parse(storedData);
 
                 console.log('no recarga el excel si hay una hoja con el nombre')
-                console.log(`Bt520`)
+                console.log(`Aif030`)
                 console.log(excelData)
                 console.log('+++++==========================================================')
-                if (excelData.Bt520)
+                if (excelData.Aif030)
 
                 {                    setTempSheets(excelData);
                     return;

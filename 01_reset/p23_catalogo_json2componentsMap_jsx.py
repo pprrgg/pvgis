@@ -5,7 +5,7 @@ import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # Ruta del catálogo y salida
-catalogo_path = '../src/components/docs/Catalogo.json'
+catalogo_path = "../src/components/docs/Catalogo.json"
 output_path = '../src/components/componentsMap.jsx'
 
 # Cargar el catálogo
