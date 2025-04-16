@@ -78,21 +78,31 @@ const Fichas = () => {
         );
     }, [Catalogo, searchText, selectedGroup, selectedSector]);
 
+
+    const loadDataFromExcel = async (filePath) => {
+        try {
+            const response = await fetch(filePath); // ← ahora se usa el parámetro filePath
+            const data = await response.arrayBuffer();
+            const workbook = XLSX.read(data, { type: "array" });
+            const sheetsData = workbook.SheetNames.reduce((acc, sheetName) => {
+                const sheet = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName], { header: 1 });
+                acc[sheetName] = sheet.filter(row => row.some(cell => cell != null && cell !== ""));
+                return acc;
+            }, {});
+
+            sessionStorage.setItem("excelData", JSON.stringify(sheetsData));
+            setTempSheets(sheetsData);
+        } catch (err) {
+            console.error("Error al cargar el archivo de la carpeta public", err);
+        }
+    };
+
+
     const handleFichaClick = (ficha) => {
-        if (!user && ficha.categoria !== "libre") {
-            toast.warning("Debes iniciar sesión para acceder a documentos premium.");
-            return;
-        }
-    
-        if (user && ficha.categoria === "extra") {
-            toast.error("Documento no disponible para su usuario.");
-            return;
-        }
-    
         // Actualizar sessionStorage antes de la navegación
         sessionStorage.setItem('selectedFicha', JSON.stringify(ficha));
-    
-        // Navegar a la página de Doc
+        loadDataFromExcel(`excel/${ficha.grupo}/${ficha.sector}/${ficha.cod}.xlsx`);
+        
         navigate(`/doc`);
     };
 

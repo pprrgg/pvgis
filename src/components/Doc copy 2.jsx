@@ -179,7 +179,7 @@ const PDFRenderer = () => {
 
             {/* <XLSXUploaderStoragePrecargaxDefectoHojaModal openx={openx} cerrarModalx={cerrarModalx}   handleRecalculate={handleRecalculate}/> */}
 
-            <MapaModal open={open} cerrarModal={cerrarModal} />
+            {/* <MapaModal open={open} cerrarModal={cerrarModal} /> */}
 
         </div>
     );

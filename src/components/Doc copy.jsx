@@ -149,7 +149,7 @@ const PDFRenderer = () => {
                     <Button
                         variant="outlined"
                         color="secondary"
-                        onClick={() => abrirModal()}
+                        onClick={() => abrirModalx()}
                         style={{
                             position: "fixed",
                             top: "70px",
@@ -177,7 +177,7 @@ const PDFRenderer = () => {
                 ))}
             </Box>
 
-            {/* <XLSXUploaderStoragePrecargaxDefectoHojaModal openx={openx} cerrarModalx={cerrarModalx}   handleRecalculate={handleRecalculate}/> */}
+            <XLSXUploaderStoragePrecargaxDefectoHojaModal openx={openx} cerrarModalx={cerrarModalx}   handleRecalculate={handleRecalculate}/>
 
             <MapaModal open={open} cerrarModal={cerrarModal} />
 
