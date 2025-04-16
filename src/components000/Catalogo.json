@@ -1,0 +1,42 @@
+[
+    {
+        "categoria": "libre",
+        "codigo": "CODIGO456 NOMBRE SEPARADO POR MAYUSCULAS SIN ESPACIOS",
+        "sector": "AAA",
+        "grupo": "AAA",
+        "cod": "Codigo456NombreSeparadoPorMayusculasSinEspacios",
+        "co": "CODIGO456"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "CODIGO123 NOMBRE SEPARADO POR MAYUSCULAS SIN ESPACIOS",
+        "sector": "AAA",
+        "grupo": "AAA",
+        "cod": "Codigo123NombreSeparadoPorMayusculasSinEspacios",
+        "co": "CODIGO123"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "CER1739 PRECIO DE LA ENERGÍA EXCEDENTARIA DEL AUTOCONSUMO",
+        "sector": "Mercado_regulado",
+        "grupo": "CONTRATOS_DE_ENERGÍA",
+        "cod": "Cer1739PrecioDeLaEnergíaExcedentariaDelAutoconsumo",
+        "co": "CER1739"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "CER1001 TÉRMINO DE FACTURACIÓN DE ENERGÍA ACTIVA DEL PVPC20TD",
+        "sector": "Mercado_regulado",
+        "grupo": "CONTRATOS_DE_ENERGÍA",
+        "cod": "Cer1001TérminoDeFacturaciónDeEnergíaActivaDelPvpc20td",
+        "co": "CER1001"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AIF030 ANÁLISIS DE OFERTA DE AUTOCONSUMO",
+        "sector": "Mercado_libre",
+        "grupo": "CONTRATOS_DE_ENERGÍA",
+        "cod": "Aif030AnálisisDeOfertaDeAutoconsumo",
+        "co": "AIF030"
+    }
+]

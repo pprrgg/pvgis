@@ -58,7 +58,7 @@ const ExcelUploaderStorage = ({ openx, cerrarModalx, filePath, handleRecalculate
     const fuchsiaColor = '#FF00FF'; // Color fucsia
     const primaryColor = '#000000'; // Color primario (negro)
 
-    const sheetName = 'dfasdf';
+    const sheetName = filePath.split('/').pop().split('.').shift();
 
     const [sheets, setSheets] = useState(null);
     const [tempSheets, setTempSheets] = useState(null);

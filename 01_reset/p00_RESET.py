@@ -6,9 +6,9 @@ import subprocess
 
 SCRIPTS_TO_RUN = [
     "p11_fastapi_json2catalogo_json.py",
-    "p21_catalogo_json2ArchivosJsx.py",
+    # "p21_catalogo_json2ArchivosJsx.py",
     "p21_catalogo_json2ArchivosXlsx.py",
-    "p23_catalogo_json2componentsMap_jsx.py",
+    # "p23_catalogo_json2componentsMap_jsx.py",
 
 ]
 # Ejecutar scripts

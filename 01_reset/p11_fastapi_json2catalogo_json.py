@@ -7,14 +7,8 @@ import shutil
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # Ruta del directorio a borrar y recrear
-docs_dir = "../src/components/docs/"
+docs_dir = "../src/components/"
 
-# Borrar la carpeta si existe
-if os.path.exists(docs_dir):
-    shutil.rmtree(docs_dir)
-
-# Crear la carpeta nuevamente
-os.makedirs(docs_dir)
 
 # Cargar resultado.json
 with open('fastapi.json', 'r', encoding='utf-8') as f:
