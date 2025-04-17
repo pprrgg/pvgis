@@ -253,8 +253,8 @@ const ExcelUploaderStorage = ({ openx, cerrarModalx, handleRecalculate }) => {
                                             <TableRow key={rowIndex}>
                                                 {row.map((cell, cellIndex) => {
                                                     const original = JSON.parse(sessionStorage.getItem("excelData"));
-                                                    const originalCell = original[activeSheet][rowIndex + 1][cellIndex];
-                                                    const isCommaSeparated = typeof originalCell === 'string' && originalCell.includes(';');
+                                                    const originalRow = original[activeSheet]?.[rowIndex + 1];
+                                                    const originalCell = originalRow ? originalRow[cellIndex] : null;                                                    const isCommaSeparated = typeof originalCell === 'string' && originalCell.includes(';');
                                                     const options = isCommaSeparated ? originalCell.split(';') : [];
 
                                                     return (
