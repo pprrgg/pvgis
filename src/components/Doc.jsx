@@ -3,15 +3,13 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./firebase/firebaseConfig";
 import axios from "axios";
 import * as pdfjsLib from "pdfjs-dist";
-import { Box, Backdrop, CircularProgress, Typography, Button, Modal } from "@mui/material";
+import { Box, Backdrop, CircularProgress, Typography, Button } from "@mui/material";
 import config from "./configURL";
 import XLSXUploaderStoragePrecargaxDefectoHojaModal from "./XLSXUploaderStoragePrecargaxDefectoHojaModal";
-import MapaModal from "./MapaModal";
 import TuneIcon from '@mui/icons-material/Tune';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = `/workers/3.11.174/pdf.worker.min.js`;
-
 
 const PDFRenderer = () => {
     const capitalizar = (str) => {
@@ -23,9 +21,6 @@ const PDFRenderer = () => {
     const ep = JSON.parse(sessionStorage.getItem('selectedFicha') || 'null');
     const ENDPOINT = `${ep.grupo}/${ep.sector}/${ep.cod}/${capitalizar(ep.co)}`;
 
-    console.log(ENDPOINT)
-
-
     const [user] = useAuthState(auth);
     const [loading, setLoading] = useState(true);
     const [images, setImages] = useState([]);
@@ -36,10 +31,42 @@ const PDFRenderer = () => {
     const abrirModal = useCallback(() => setOpen(true), []);
     const cerrarModal = useCallback(() => setOpen(false), []);
 
-
     const [openx, setOpenx] = useState(false);
     const abrirModalx = useCallback(() => setOpenx(true), []);
     const cerrarModalx = useCallback(() => setOpenx(false), []);
+
+    const mensajes = [
+        "Conectando al servidor, por favor espere...",
+        "Inicializando el proceso de simulación...",
+        "Cargando las primeras configuraciones...",
+        "Verificando los datos iniciales...",
+        "Simulando operación, esto tomará unos segundos...",
+        "Procesando información en segundo plano...",
+        "Generando el documento solicitado...",
+        "Aplicando formato y realizando validaciones...",
+        "Revisando errores y completando los últimos detalles...",
+        "Cargando resultados finales y finalizando el proceso...",
+      ];
+
+    const [textoActual, setTextoActual] = useState(mensajes[0]);
+
+    useEffect(() => {
+        if (!loading) return;
+
+        let index = 0;
+        let intervaloId;
+
+        const cambiarTexto = () => {
+            index = (index + 1) % mensajes.length;
+            setTextoActual(mensajes[index]);
+            const tiempoAleatorio = Math.floor(Math.random() * 3000) + 10; // entre 1000 y 3000 ms
+            intervaloId = setTimeout(cambiarTexto, tiempoAleatorio);
+        };
+
+        cambiarTexto();
+
+        return () => clearTimeout(intervaloId);
+    }, [loading]);
 
     const getExcelDataFromSessionStorage = () => {
         const data = sessionStorage.getItem("excelData");
@@ -100,7 +127,6 @@ const PDFRenderer = () => {
 
     const handleDownload = () => {
         if (!pdfBlob) return;
-
         const url = window.URL.createObjectURL(pdfBlob);
         const link = document.createElement("a");
         link.href = url;
@@ -109,23 +135,18 @@ const PDFRenderer = () => {
         window.URL.revokeObjectURL(url);
     };
 
-
     const handleRecalculate = () => {
         sessionStorage.setItem("modalOpen", "true");
         window.location.reload();
     };
 
-
     return (
         <div style={{ position: "relative" }}>
-
-
-
             <Backdrop open={loading} style={{ zIndex: 1201, color: "#000" }}>
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                     <CircularProgress color="inherit" sx={{ color: 'white' }} />
                     <Typography variant="h6" sx={{ color: 'white', marginTop: 2 }}>
-                        Cargando...
+                        {textoActual}
                     </Typography>
                 </div>
             </Backdrop>
@@ -144,7 +165,7 @@ const PDFRenderer = () => {
                             zIndex: 1300,
                             boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
                             borderRadius: "18px",
-                            minWidth: "48px", // para que el botón no sea muy pequeño
+                            minWidth: "48px",
                             padding: "8px"
                         }}
                     >
@@ -171,8 +192,6 @@ const PDFRenderer = () => {
                 </>
             )}
 
-
-
             <Box display="flex" flexDirection="column" alignItems="flex-start">
                 {images.map((image, index) => (
                     <img
@@ -184,12 +203,10 @@ const PDFRenderer = () => {
                 ))}
             </Box>
 
-
             <XLSXUploaderStoragePrecargaxDefectoHojaModal openx={openx} cerrarModalx={cerrarModalx} handleRecalculate={handleRecalculate} />
-
-
         </div>
     );
 };
 
 export default PDFRenderer;
+
