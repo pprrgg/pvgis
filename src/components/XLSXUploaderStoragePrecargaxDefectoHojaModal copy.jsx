@@ -97,37 +97,21 @@ const ExcelUploaderStorage = ({ openx, cerrarModalx, handleRecalculate }) => {
         const file = event.target.files[0];
         handleFileUpload(file);
     };
+
     const handleImportar = () => {
-        const ep = JSON.parse(sessionStorage.getItem('selectedFicha') || 'null');
-    
-        if (!ep || !ep.cod) {
-            toast.error("No se encontró el código de referencia para validar el archivo.");
-            return;
-        }
-    
         const fileInput = document.createElement("input");
         fileInput.type = "file";
         fileInput.accept = ".xlsx, .xls";
         fileInput.style.display = "none";
-    
-        fileInput.addEventListener("change", (event) => {
-            const file = event.target.files[0];
-    
-            if (!file || !file.name.toLowerCase().includes(ep.cod.toLowerCase())) {
-                toast.error(`El archivo debe ser 'DocTec_${ep.cod}_******** '.`);
-                document.body.removeChild(fileInput);
-                return;
-            }
-    
-            handleFileUpload(file);
-            document.body.removeChild(fileInput);
-        });
-    
+        fileInput.addEventListener("change", handleInputChange);
+
         document.body.appendChild(fileInput);
         fileInput.click();
+
+        fileInput.addEventListener("change", () => {
+            document.body.removeChild(fileInput);
+        });
     };
-    
-    
 
     const handleExport = () => {
         const sessionData = JSON.parse(sessionStorage.getItem("excelData"));
@@ -139,9 +123,8 @@ const ExcelUploaderStorage = ({ openx, cerrarModalx, handleRecalculate }) => {
             XLSX.utils.book_append_sheet(wb, ws, sheetName);
         });
 
-        const ep = JSON.parse(sessionStorage.getItem('selectedFicha') || 'null');
-
-        const fileName = `DocTec_${ep.cod}_${formattedDate}.xlsx`;
+        const sheetName = Object.keys(sessionData)[activeTab] || "Hoja";
+        const fileName = `DocTec_${sheetName}_${formattedDate}.xlsx`;
         XLSX.writeFile(wb, fileName);
     };
 
