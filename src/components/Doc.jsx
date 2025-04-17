@@ -127,10 +127,14 @@ const PDFRenderer = () => {
 
     const handleDownload = () => {
         if (!pdfBlob) return;
+        const ep = JSON.parse(sessionStorage.getItem('selectedFicha') || 'null');
+
+        const fileName = `DocTec_${ep.cod}.pdf`;
+
         const url = window.URL.createObjectURL(pdfBlob);
         const link = document.createElement("a");
         link.href = url;
-        link.download = "documento.pdf";
+        link.download = fileName;
         link.click();
         window.URL.revokeObjectURL(url);
     };
