@@ -3,7 +3,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./firebase/firebaseConfig";
 import axios from "axios";
 import * as pdfjsLib from "pdfjs-dist";
-import { Box, Backdrop, CircularProgress, Typography, Button, Modal } from "@mui/material";
+import { Box, Backdrop, CircularProgress, Typography, Button } from "@mui/material";
 import config from "./configURL";
 import XLSXUploaderStoragePrecargaxDefectoHojaModal from "./XLSXUploaderStoragePrecargaxDefectoHojaModal";
 import MapaModal from "./MapaModal";
@@ -31,13 +31,11 @@ const PDFRenderer = () => {
     const [images, setImages] = useState([]);
     const [error, setError] = useState(null);
     const [pdfBlob, setPdfBlob] = useState(null);
-
     const [open, setOpen] = useState(false);
+    const [openx, setOpenx] = useState(false);
+
     const abrirModal = useCallback(() => setOpen(true), []);
     const cerrarModal = useCallback(() => setOpen(false), []);
-
-
-    const [openx, setOpenx] = useState(false);
     const abrirModalx = useCallback(() => setOpenx(true), []);
     const cerrarModalx = useCallback(() => setOpenx(false), []);
 
@@ -154,7 +152,7 @@ const PDFRenderer = () => {
                     <Button
                         variant="outlined"
                         color="secondary"
-                        onClick={abrirModalx}
+                        onClick={abrirModal}
                         style={{
                             position: "fixed",
                             top: "70px",
@@ -184,10 +182,9 @@ const PDFRenderer = () => {
                 ))}
             </Box>
 
-            {/* <XLSXUploaderStoragePrecargaxDefectoHojaModal openx={openx} cerrarModalx={cerrarModalx} handleRecalculate={handleRecalculate} /> */}
-
             <XLSXUploaderStoragePrecargaxDefectoHojaModal openx={openx} cerrarModalx={cerrarModalx} handleRecalculate={handleRecalculate} />
 
+            <MapaModal open={open} cerrarModal={cerrarModal} />
 
         </div>
     );
