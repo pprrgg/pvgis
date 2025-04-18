@@ -6,6 +6,15 @@ import shutil
 # Mover al directorio actual del script
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
+# Ruta del archivo original
+origen = '/home/pk/Desktop/backend/zz/fastapi.json'
+
+# Copiar a la carpeta actual (.)
+destino = './fastapi.json'
+
+# Copiar el archivo
+shutil.copy(origen, destino)
+
 # Ruta del directorio a borrar y recrear
 docs_dir = "../src/components/"
 

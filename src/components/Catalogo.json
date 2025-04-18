@@ -1,6 +1,14 @@
 [
     {
         "categoria": "libre",
+        "codigo": "CODIGO000 NOMBRE SEPARADO POR MAYUSCULAS SIN ESPACIOS",
+        "sector": "AAA",
+        "grupo": "AAA",
+        "cod": "Codigo000NombreSeparadoPorMayusculasSinEspacios",
+        "co": "CODIGO000"
+    },
+    {
+        "categoria": "libre",
         "codigo": "CODIGO456 NOMBRE SEPARADO POR MAYUSCULAS SIN ESPACIOS",
         "sector": "AAA",
         "grupo": "AAA",

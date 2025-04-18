@@ -1,6 +1,90 @@
 {
+    "AAA/AAA/Codigo000NombreSeparadoPorMayusculasSinEspacios.py": {
+        "Parámetros": [
+            [
+                "Parametro",
+                "Valor"
+            ],
+            [
+                "Inversión inicial [€]",
+                0
+            ],
+            [
+                "Bonificación  inicial [€]",
+                10000
+            ],
+            [
+                "Duración de la actuación [años]",
+                15
+            ],
+            [
+                "Préstamo recibido [€]",
+                100000
+            ],
+            [
+                "Tasa de interés del préstamo [\\%]",
+                5
+            ],
+            [
+                "Plazo del préstamo [años]",
+                15
+            ],
+            [
+                "Inflación annual [\\%]",
+                3
+            ],
+            [
+                "Ahorro annual [€]",
+                25000
+            ],
+            [
+                "Costos fijos operativos [€]",
+                1000
+            ],
+            [
+                "Tasa de descuento [\\%]",
+                6
+            ]
+        ],
+        "Coordenadas": [
+            [
+                "Parámetro",
+                "Valor"
+            ],
+            [
+                "lat",
+                36.6641681434112
+            ],
+            [
+                "lng",
+                -4.45863940137516
+            ]
+        ],
+        "Participantes": [
+            [
+                "Parámetro",
+                "P1"
+            ],
+            [
+                "Rol",
+                ""
+            ],
+            [
+                "DNI/NIF/NIE",
+                ""
+            ],
+            [
+                "Nombre/Razón Social",
+                "~"
+            ],
+            [
+                "Titulación",
+                ""
+            ]
+        ]
+    },
     "AAA/AAA/Codigo456NombreSeparadoPorMayusculasSinEspacios.py": {
-        "Codigo456": [
+        "Parámetros": [
             [
                 "Parametro",
                 "Valor"
@@ -84,7 +168,7 @@
         ]
     },
     "AAA/AAA/Codigo123NombreSeparadoPorMayusculasSinEspacios.py": {
-        "Codigo123": [
+        "Parámetros": [
             [
                 "Parametro",
                 "Valor"

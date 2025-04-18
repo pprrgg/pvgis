@@ -19,7 +19,8 @@ const PDFRenderer = () => {
     };
 
     const ep = JSON.parse(sessionStorage.getItem('selectedFicha') || 'null');
-    const ENDPOINT = `${ep.grupo}/${ep.sector}/${ep.cod}/${capitalizar(ep.co)}`;
+    // const ENDPOINT = `${ep.grupo}/${ep.sector}/${ep.cod}/${capitalizar(ep.co)}`;
+    const ENDPOINT = `${ep.grupo}/${ep.sector}/${ep.cod}/f`;
 
     const [user] = useAuthState(auth);
     const [loading, setLoading] = useState(true);
