@@ -114,8 +114,7 @@ const PDFRenderer = () => {
   const renderLocalPdf = useCallback(async () => {
     setLoading(true);
     try {
-    console.log(`/pdfs/${ENDPOINT.slice(0, -2)}_.pdf`)
-      const response = await fetch(`/pdfs/${ENDPOINT.slice(0, -2)}_.pdf`);
+      const response = await fetch("/pdfs/default.pdf");
       const arrayBuffer = await response.arrayBuffer();
       await renderPdfBlob(arrayBuffer);
     } catch (err) {

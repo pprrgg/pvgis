@@ -177,10 +177,10 @@ const ExcelUploaderStorage = ({ openx, cerrarModalx, handleRecalculate }) => {
 
     const menuOptions = [
         // { label: "Cancelar", icon: <CloseIcon />, onClick: cerrarModalx },
+        { label: "Calcular", icon: <CalculateIcon />, onClick: handleRecalculate },
         { label: "Importar", icon: <CloudUploadIcon />, onClick: handleImportar },
         { label: "Exportar", icon: <CloudDownloadIcon />, onClick: handleExport },
         { label: "Ubicación", icon: <MapIcon />, onClick: handleOpenMapaModal },
-        { label: "Calcular", icon: <CalculateIcon />, onClick: handleRecalculate },
     ];
 
     return (
