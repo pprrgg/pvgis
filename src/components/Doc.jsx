@@ -39,6 +39,7 @@ const PDFRenderer = () => {
 
   const mensajes = [
     "Conectando al servidor, por favor espere...",
+    "Conectando al servidor, por favor espere...",
     "Inicializando el proceso de simulación...",
     "Cargando las primeras configuraciones...",
     "Verificando los datos iniciales...",
@@ -48,7 +49,12 @@ const PDFRenderer = () => {
     "Aplicando formato y realizando validaciones...",
     "Revisando errores y completando los últimos detalles...",
     "Cargando resultados finales y finalizando el proceso...",
+    "Estableciendo comunicación segura con el servidor...",
+    "Optimización de parámetros en curso...",
+    "Consolidando datos para la presentación...",
+    "Finalizando tareas pendientes y liberando recursos...",
   ];
+
   const [textoActual, setTextoActual] = useState(mensajes[0]);
 
   useEffect(() => {

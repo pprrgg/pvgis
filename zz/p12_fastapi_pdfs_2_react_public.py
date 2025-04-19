@@ -8,6 +8,11 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 src_root = Path('/home/pk/Desktop/backend/app/routers')
 dst_root = Path('../public/pdfs')
 
+# Eliminar la carpeta destino si ya existe
+if dst_root.exists() and dst_root.is_dir():
+    shutil.rmtree(dst_root)
+    print(f'Carpeta eliminada: {dst_root}')
+    
 # Recorrer los archivos recursivamente
 for file in src_root.rglob('*.pdf'):
     if file.is_file() and file.name.endswith('_.pdf'):
